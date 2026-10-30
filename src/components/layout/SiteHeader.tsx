@@ -17,7 +17,7 @@ export default function SiteHeader({ route }: SiteHeaderProps) {
 
   return (
     <header className="sticky top-0 z-20 border-b-2 border-ink bg-paper">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-6">
         <button
           type="button"
           onClick={() => navigate('/')}
@@ -26,16 +26,16 @@ export default function SiteHeader({ route }: SiteHeaderProps) {
           <Gamepad2 className="h-5 w-5 shrink-0" aria-hidden="true" />
           <span className="truncate">{SITE_CONTENT.ownerName}</span>
         </button>
-        <div className="flex items-center gap-2 sm:gap-3">
-          <nav aria-label="Main">
-            <ul className="flex items-center gap-1 sm:gap-2">
+        <div className="flex w-full items-center gap-2 sm:w-auto sm:gap-3">
+          <nav aria-label="Main" className="flex-1 sm:flex-none">
+            <ul className="grid grid-cols-3 gap-1 sm:flex sm:items-center sm:gap-2">
               {links.map((link) => (
                 <li key={link.path}>
                   <button
                     type="button"
                     aria-current={link.active ? 'page' : undefined}
                     onClick={() => navigate(link.path)}
-                    className={`border-2 border-ink px-3 py-2 font-pixel text-[9px] uppercase transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink sm:px-4 sm:text-[10px] ${
+                    className={`w-full border-2 border-ink px-2 py-2 font-pixel text-[8px] uppercase transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink sm:w-auto sm:px-4 sm:text-[10px] ${
                       link.active ? 'bg-ink text-paper' : 'bg-paper text-ink hover:bg-mist'
                     }`}
                   >

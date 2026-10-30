@@ -207,12 +207,12 @@ export default function GameScreen({ active, collected, onCollect, onReset }: Ga
         </div>
       </div>
       <div className="mx-auto max-w-4xl">
-        <div className="mb-4 flex items-center justify-between gap-3 border-2 border-ink bg-paper px-3 py-2 font-pixel text-[9px] uppercase sm:text-[10px]">
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-x-3 gap-y-2 border-2 border-ink bg-paper px-3 py-2 font-pixel text-[9px] uppercase sm:text-[10px]">
           <div className="flex flex-col gap-1 sm:flex-row sm:gap-4">
             <span>Distance {formatMeters(hud.meters)} m</span>
             <span className="text-steel">Best {formatMeters(best)} m</span>
           </div>
-          <div className="flex items-center gap-2" aria-label={`${collected.length} of ${TOTAL_COLLECTIBLES} collectibles found`}>
+          <div className="order-last flex w-full items-center justify-center gap-2 sm:order-none sm:w-auto" aria-label={`${collected.length} of ${TOTAL_COLLECTIBLES} collectibles found`}>
             {COLLECTIBLE_ORDER.map((id) => {
               const found = collected.includes(id);
               return (
@@ -227,6 +227,7 @@ export default function GameScreen({ active, collected, onCollect, onReset }: Ga
               );
             })}
           </div>
+          <div className="flex items-center gap-2">
           <button
             type="button"
             onClick={togglePause}
@@ -245,6 +246,7 @@ export default function GameScreen({ active, collected, onCollect, onReset }: Ga
           >
             {muted ? <VolumeX className="h-4 w-4" aria-hidden="true" /> : <Volume2 className="h-4 w-4" aria-hidden="true" />}
           </button>
+          </div>
         </div>
 
         <div className="relative border-2 border-ink bg-paper shadow-pixel">
