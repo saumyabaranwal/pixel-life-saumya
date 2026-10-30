@@ -1,0 +1,330 @@
+{
+  "site": {
+    "owner": "Saumya",
+    "ownerName": "Saumya Baranwal",
+    "title": "MY LIFE IN PIXELS",
+    "subtitle": "Currently running. Constantly evolving.",
+    "tagline": "Run. Collect. Discover.",
+    "footer": "Saumya's personal portfolio, built for the Wispr Flow India challenge.",
+    "email": "saumya.bar@gmail.com",
+    "collectActionLabel": "Peek Inside"
+  },
+  "socialLinks": [
+    { "id": "linkedin", "label": "LinkedIn", "url": "https://linkedin.com/in/saumya-baranwal-229088369" },
+    { "id": "github", "label": "GitHub", "url": "https://github.com/saumyabaranwal" },
+    { "id": "leetcode", "label": "LeetCode", "url": "https://leetcode.com/u/saumyabaranwal/" }
+  ],
+  "codingProfiles": [
+    { "label": "LeetCode", "url": "https://leetcode.com/u/saumyabaranwal/", "note": "Rating: 1624, 150+ problems" },
+    { "label": "CodeChef", "url": "https://codechef.com/users/saumyabar", "note": "Rating: 1312, 1 ★" },
+    { "label": "HackerRank", "url": "https://www.hackerrank.com/profile/saumyabaranwal", "note": "Problem Solving" }
+  ],
+  "collectibles": [
+    {
+      "id": "builder",
+      "name": "The Builder",
+      "summary": "I turn practical problems into working software, from AI agents that audit data deletion to full-stack applications and offline accessibility tools.",
+      "intro": "I enjoy building things that solve real problems. My projects have taken me across full-stack development, browser extensions, AI agents, and computer vision. I like understanding how the pieces fit together, experimenting with unfamiliar technologies, and taking an idea from concept to a working application.",
+
+      "blocks": [
+        {
+          "type": "cards",
+          "heading": "Featured Projects",
+          "items": [
+        {
+          "title": "Ghost Data Audit Agent",
+          "meta": "AI Agent · Hackathon",
+          "body": "An AI-powered system that verifies whether user data has actually been deleted across files, logs, databases, and screenshots.",
+          "details": [
+            "Five-stage pipeline for identity resolution, evidence collection, policy evaluation, and remediation.",
+            "Processed 518 requests with zero extra remediation steps.",
+            "Finished in the top 16% of the leaderboard."
+          ],
+          "tags": ["Python", "Gemini API", "RapidOCR", "pypdf"],
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/saumyabaranwal/hackerrank-orchestrate-october26" }
+          ]
+        },
+        {
+          "title": "PocketCart",
+          "meta": "Full-Stack Development",
+          "body": "A Chrome extension and web dashboard to save, organise, and manage products from different shopping websites.",
+          "details": [
+            "Persistent collections, search, filtering, and duplicate prevention.",
+            "Full-stack architecture with a browser extension and REST API."
+          ],
+          "tags": ["React", "Node.js", "Express", "MongoDB", "Chrome Extension"],
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/saumyabaranwal/pocketcart" },
+            { "label": "Live Project", "url": "https://pocketcart-beta.vercel.app" }
+          ]
+        },
+        {
+          "title": "VisionMate",
+          "meta": "AI · Computer Vision · Accessibility",
+          "body": "An offline-first, voice-guided assistant that helps visually impaired users read text, identify objects, and recognise currency.",
+          "details": [
+            "Combines object detection, OCR, and currency recognition.",
+            "Local AI inference with approximately 100 ms currency-classifier inference time."
+          ],
+          "tags": ["Python", "React", "FastAPI", "YOLO11", "ONNX", "PaddleOCR"],
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/saumyabaranwal/visionmate" }
+          ]
+        },
+        {
+          "title": "Passwordium",
+          "meta": "Web Development",
+          "body": "A lightweight password generator with custom lengths and multiple character combinations.",
+          "tags": ["HTML", "CSS", "JavaScript"],
+          "links": [
+            { "label": "GitHub", "url": "https://github.com/saumyabaranwal/passwordium" },
+            { "label": "Live Project", "url": "https://saumyabaranwal.github.io/passwordium/" }
+          ]
+        }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Hackathons and experience",
+          "items": [
+            {
+              "title": "Hackin' Winters: Winner, Best First Year Team",
+              "meta": "2026 / Team CodeLlamas",
+              "body": "Built and tested a full-stack digital campus marketplace with a small team, working through debugging, integration, and adapting to unfamiliar tools under hackathon time pressure."
+            },
+            {
+              "title": "Kode With Klossy: Scholar",
+              "meta": "June 2024 to August 2025",
+              "body": "Completed the Web Development and Data Science tracks. Built responsive, interactive applications with HTML, CSS, and JavaScript, and used SQL and Tableau for exploratory data analysis, hypothesis testing, and dashboards."
+            }
+          ]
+        },
+        {
+          "type": "profiles",
+          "heading": "Coding profiles"
+        }
+      ]
+    },
+    {
+      "id": "learner",
+      "name": "The Learner",
+      "summary": "A Computer Science student at JIIT, learning by building, exploring software engineering, AI, computer vision, and problem-solving one project at a time.",
+      "intro": "I'm pursuing a B.Tech in Computer Science and Engineering at Jaypee Institute of Information Technology. I enjoy connecting what I learn in class with practical projects, exploring new technologies, and strengthening my problem-solving skills.",
+      "blocks": [
+        {
+          "type": "cards",
+          "heading": "Education",
+          "items": [
+            {
+              "title": "Jaypee Institute of Information Technology, Noida",
+              "meta": "B.Tech, Computer Science and Engineering / 2025 to 2029",
+              "body": "CGPA: 9.16 out of 10."
+            },
+            {
+              "title": "Cambridge School, Indirapuram",
+              "meta": "CBSE Board",
+              "body": "Class XII: 96.6%, Science Stream Topper. Class X: 97.2%."
+            }
+          ]
+        },
+        {
+          "type": "bullets",
+          "heading": "Technical interests",
+          "items": [
+            "Full-stack web development",
+            "Artificial intelligence and generative AI",
+            "AI agents and LLM integration",
+            "Computer vision and OCR",
+            "Data structures and algorithms",
+            "Software engineering and application design",
+            "Databases and backend development",
+            "UI/UX design"
+          ]
+        },
+        {
+          "type": "tagGroups",
+          "heading": "Technical skills",
+          "groups": [
+            { "label": "Programming", "items": ["Python", "C++", "JavaScript", "SQL", "Java (familiar)"] },
+            { "label": "Web development", "items": ["React.js", "Node.js", "Express.js", "FastAPI", "HTML", "CSS"] },
+            {
+              "label": "AI and machine learning",
+              "items": ["PyTorch", "OpenCV", "Gemini API", "AI agent design", "Prompt engineering", "Claude AI", "Ollama", "YOLO11", "ONNX Runtime"]
+            },
+            { "label": "OCR", "items": ["RapidOCR", "PaddleOCR"] },
+            { "label": "Databases", "items": ["MongoDB Atlas", "MySQL", "PostgreSQL"] },
+            { "label": "Tools", "items": ["Git", "GitHub", "Figma", "Canva"] }
+          ]
+        },
+        {
+          "type": "bullets",
+          "heading": "Certifications",
+          "items": [
+            "AWS Educate: Introduction to Cloud 101",
+            "AWS Educate: Machine Learning Foundations",
+            "AWS Educate: Introduction to Generative AI",
+            "HackerRank: Problem Solving (Basic) Certificate"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Learning philosophy",
+          "body": "I learn best by making things. Whether it's understanding a new data structure, exploring an unfamiliar framework, or debugging a complex project, I like turning concepts into something tangible."
+        },
+        {
+          "type": "profiles",
+          "heading": "Coding profiles"
+        }
+      ]
+    },
+    {
+      "id": "human",
+      "name": "The Human",
+      "summary": "There's more to my story than code. I've explored leadership, collaboration, student communities, and even a little hands-on science beyond the computer screen.",
+      "intro": "My experiences outside programming have shaped how I collaborate, communicate, and approach new challenges. I've taken on leadership responsibilities, worked with student communities, and participated in projects that brought together technology, science, and teamwork.",
+      "blocks": [
+        {
+          "type": "cards",
+          "heading": "Leadership and community",
+          "items": [
+            {
+              "title": "Secretary General, MUN Society",
+              "meta": "Cambridge School",
+              "body": "Led the planning and execution of events and coordinated multiple teams for the 16th edition of the Cambridge School Model United Nations Conference."
+            },
+            {
+              "title": "Core Team Member",
+              "meta": "Developer Students Club"
+            },
+            {
+              "title": "Core Team Member",
+              "meta": "Open Source Developer's Community"
+            },
+            {
+              "title": "Core Team Member",
+              "meta": "Parola, Literary Society"
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Beyond software",
+          "items": [
+            {
+              "title": "Microbial Fuel Cell Prototype",
+              "meta": "Eco Decathlon / DD National",
+              "body": "Developed a working microbial fuel cell prototype that secured second position in the Eco Decathlon. The prototype was featured on DD National."
+            }
+          ]
+        },
+        {
+          "type": "bullets",
+          "heading": "Recognition",
+          "items": [
+            "Principal's Award for outstanding contribution to the school community.",
+            "Merit Scholarship in Classes XI and XII for academic excellence."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Personal interests",
+          "body": "Music, Piano, Literature, ",
+          "placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "dreamer",
+      "name": "The Dreamer",
+      "summary": "The ideas I'm still chasing, the things I want to explore, and the projects I haven't built yet.",
+      "intro": "The ambitions, goals and projects I am working towards next.",
+      "blocks": [
+        {
+          "type": "text",
+          "heading": "Ambitions",
+          "body": "I have always been very interested in UI/UX design. With how fast AI is evolving, I feel the field may not have a long future, but I still want to keep designing as my own hobby. I love designing apps and websites, and I have a creative side."
+        },
+        {
+          "type": "bullets",
+          "heading": "Ideas I want to explore",
+          "items": [
+            "Cybersecurity as a skill, with projects I build around it.",
+            "AI jailbreaks: learning how language models get bypassed and how to defend against it."
+          ]
+        },
+        {
+          "type": "bullets",
+          "heading": "Future goals",
+          "items": [
+            "Get better at problem solving and become an expert Codeforces player by the end of my second year.",
+            "Cover DSA topics thoroughly, not just solve questions."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Things I want to build next",
+          "items": [
+            {
+              "title": "Devfolium",
+              "meta": "In progress",
+              "body": "A platform where users build their own portfolio using resume parsing and AI-based resume suggestions, ending with a fully working resume website. I am designing a set of themes so anyone can pick one and create a resume without writing any code."
+            },
+            {
+              "title": "Feature flag management system",
+              "meta": "In progress",
+              "body": "A VS Code extension for managing feature flags, which I am currently building."
+            },
+            {
+              "title": "AI agent hackathons",
+              "meta": "Ongoing",
+              "body": "Taking part in multiple AI-related hackathons to build AI agents."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "qaEntries": [
+    {
+      "question": "Who are you beyond your resume?",
+      "answer": "Beyond software engineering, I'd describe myself as a curious and creative person who loves looking at things from different perspectives. I'm someone with too many ideas and probably too many interests. Technology, literature, art — I've never really wanted to limit myself to just one field. I think what defines me most is that I enjoy connecting ideas from completely different places and finding my own way of looking at things.",
+      "placeholder": false
+    },
+    {
+      "question": "What are you most proud of?",
+      "answer": "My friends often call me a perfectionist because I can spend an unreasonable amount of time on the smallest details. But what I'm most proud of is learning to balance that with everything else I want to do. I have multiple interests, goals, and responsibilities, and I genuinely enjoy giving each of them the attention they deserve. Being able to pursue so many things without constantly having to give one up for another is something I'm quite proud of.",
+      "placeholder": false
+    },
+    {
+      "question": "What is something that did not go as planned?",
+      "answer": "Quite a few of my first-year hackathon projects! One that comes to mind is Campus Connect Card, where we wanted to build a payment card that would work exclusively on campus, along with a transaction management application. We were ambitious, but honestly, we didn't yet have the skills or even know where to start learning what we needed. The idea was much bigger than what we could actually build at the time, and the final product had quite a few limitations. Looking back, though, those projects taught me the difference between having an exciting idea and knowing how to execute it.\n\nI'm still figuring things out in other areas, too. Competitive programming is one example. I've been meaning to get serious about Codeforces, but somehow I keep getting lost navigating the platform instead of actually participating! It's still on my bucket list to become genuinely good at competitive programming by the end of my second year.",
+      "placeholder": false
+    },
+    {
+      "question": "What motivates you to build things?",
+      "answer": "I'll be honest: when I started developing, it was the green dots on my GitHub profile. But somewhere along the way, I started enjoying the process much more than the numbers. Now, I actively look for things I haven't explored yet, whether it's building a VS Code extension or experimenting with an unfamiliar technology. It's a little like travelling — some people want to visit the popular destinations, while I want to explore those and the places nobody has told me about yet. I don't want to learn things just to put them on my resume. I genuinely don't want to leave too much unexplored.",
+      "placeholder": false
+    },
+    {
+      "question": "Which project taught you the most?",
+      "answer": "PocketCart, my first full-stack project. I spent almost a month building it, starting with paper sketches of the UI, mapping out API calls, and then translating everything into code. It's essentially a shopping-list manager that works across different websites, but the learning experience was much bigger than the project itself. I got to understand how the frontend, backend, database, and APIs come together to make a complete product. I'm especially proud of the UI and how cleanly everything connects. Even today, the concepts I learned while building PocketCart are some of the ones I remember best. It taught me what it feels like to take an idea from paper to a working product.",
+      "placeholder": false
+    },
+    {
+      "question": "Why are you interested in Wispr Flow?",
+      "answer": "My mind is almost always running with ideas, and Wispr Flow helps me turn that constant stream of thoughts into something structured and usable. What I love is that it doesn't just transcribe what I say; it helps communicate what I actually mean, without losing my original thought. I'm often working on projects late at night, when typing everything out feels like an unnecessary extra step. Being able to simply speak my thoughts and turn them into something actionable is incredibly useful. It bridges the gap between having an idea and actually doing something with it.",
+      "placeholder": false
+    },
+    {
+      "question": "What would you do with the $3,000 grant?",
+      "answer": "My first priority would be investing in my learning and building experience. I'd put a good portion towards AI credits, tools, and hardware that would help me experiment with bigger ideas. I'd also love to upgrade some everyday essentials, like my mouse and headphones. And, of course, I'd keep aside something for myself and gifts for my family. I think being able to share a milestone like this with them would make it even more special.",
+      "placeholder": false
+    },
+    {
+      "question": "What do you want to build next?",
+      "answer": "I have quite a few things on my mind! I'm currently building Flag Pilot, a VS Code extension that helps developers manage feature flags directly from their editor. I'm also working on a personalized portfolio-builder platform where people can turn their resumes into more interactive, personalized portfolios. Beyond product building, I want to explore cybersecurity and understand more of what's happening behind the scenes of the systems we use. I'm also getting increasingly interested in agentic AI, which is why I've been participating in AI-focused hackathons and building smaller projects. Eventually, I want to go deeper into LLMs and deep learning. I don't have everything figured out yet, but I have a pretty long list of things I want to explore.",
+      "placeholder": false
+    }
+  ]
+}

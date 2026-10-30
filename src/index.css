@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --paper: 247 246 242;
+    --ink: 17 17 17;
+    --mist: 231 229 223;
+    --steel: 95 95 95;
+    color-scheme: light;
+  }
+
+  :root.dark {
+    --paper: 44 39 34;
+    --ink: 226 220 206;
+    --mist: 62 56 49;
+    --steel: 168 158 144;
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-paper text-ink;
+  }
+}
+
+.touch-only {
+  display: none;
+}
+
+.rotate-hint {
+  display: none;
+}
+
+@media (pointer: coarse) {
+  .touch-only {
+    display: block;
+  }
+}
+
+@media (pointer: coarse) and (orientation: portrait) {
+  .rotate-hint {
+    display: block;
+  }
+}
