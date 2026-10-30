@@ -21,7 +21,7 @@ export default function SiteHeader({ route }: SiteHeaderProps) {
         <button
           type="button"
           onClick={() => navigate('/')}
-          className="flex min-w-0 items-center gap-3 font-pixel text-[10px] uppercase leading-relaxed hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink"
+          className="flex min-w-0 items-center justify-center gap-3 font-pixel sm:justify-start text-[10px] uppercase leading-relaxed hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink"
         >
           <Gamepad2 className="h-5 w-5 shrink-0" aria-hidden="true" />
           <span className="truncate">{SITE_CONTENT.ownerName}</span>
