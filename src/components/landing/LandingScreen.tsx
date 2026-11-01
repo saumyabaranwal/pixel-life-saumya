@@ -2,6 +2,7 @@ import { ArrowRight, BookOpen, Mail, MessageCircle, Play } from 'lucide-react';
 import PixelArt from '@/components/ui/PixelArt';
 import PixelButton from '@/components/ui/PixelButton';
 import SocialLinks from '@/components/landing/SocialLinks';
+import EmailCopyLink from '@/components/ui/EmailCopyLink';
 import { navigate } from '@/hooks/useRoute';
 import { SITE_CONTENT } from '@/data/content';
 import { SPRITES } from '@/game/sprites';
@@ -45,13 +46,14 @@ export default function LandingScreen() {
       <div className="mt-12 flex w-full flex-col items-center gap-4">
         <p className="font-pixel text-[9px] uppercase text-steel">Find me online</p>
         <SocialLinks />
-        <a
-          href={`mailto:${SITE_CONTENT.email}`}
+        <EmailCopyLink
+          ariaLabel={`Email ${SITE_CONTENT.email}`}
+          testId="landing-email-link"
           className="group flex items-center gap-2 font-mono text-sm text-ink underline-offset-4 transition-colors hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
         >
           <Mail className="h-4 w-4" aria-hidden="true" />
           {SITE_CONTENT.email}
-        </a>
+        </EmailCopyLink>
       </div>
 
       <p className="mt-12 font-mono text-sm text-steel">{SITE_CONTENT.tagline}</p>

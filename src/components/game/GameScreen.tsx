@@ -200,12 +200,6 @@ export default function GameScreen({ active, collected, onCollect, onReset }: Ga
 
   return (
     <section className={active ? 'px-4 py-8 sm:px-6 sm:py-10' : 'hidden'} aria-label="Pixel runner game">
-      <div className="rotate-hint fixed inset-0 z-50 bg-paper p-8 text-center">
-        <div className="flex h-full flex-col items-center justify-center gap-6">
-          <RotateCcw className="h-12 w-12" aria-hidden="true" />
-          <p className="font-pixel text-xs uppercase leading-relaxed">Rotate your phone to landscape to play</p>
-        </div>
-      </div>
       <div className="mx-auto max-w-4xl">
         <div className="mb-4 flex flex-wrap items-center justify-between gap-x-3 gap-y-2 border-2 border-ink bg-paper px-3 py-2 font-pixel text-[9px] uppercase sm:text-[10px]">
           <div className="flex flex-col gap-1 sm:flex-row sm:gap-4">
@@ -232,6 +226,7 @@ export default function GameScreen({ active, collected, onCollect, onReset }: Ga
             type="button"
             onClick={togglePause}
             disabled={!canPause}
+            data-testid="game-pause-button"
             aria-label={phase === 'paused' ? 'Resume game' : 'Pause game'}
             className="flex h-8 w-8 items-center justify-center border-2 border-ink bg-paper transition-colors hover:bg-mist disabled:pointer-events-none disabled:opacity-40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink"
           >
@@ -240,6 +235,7 @@ export default function GameScreen({ active, collected, onCollect, onReset }: Ga
           <button
             type="button"
             onClick={() => setMuted((current) => !current)}
+            data-testid="game-sound-button"
             aria-label={muted ? 'Turn sound on' : 'Turn sound off'}
             aria-pressed={!muted}
             className="flex h-8 w-8 items-center justify-center border-2 border-ink bg-paper transition-colors hover:bg-mist focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink"
@@ -255,6 +251,7 @@ export default function GameScreen({ active, collected, onCollect, onReset }: Ga
             width={WORLD_W}
             height={WORLD_H}
             role="img"
+            data-testid="game-canvas"
             aria-label="Runner playing field. Press space or tap to jump."
             className="block h-auto w-full touch-none select-none"
             style={{ imageRendering: 'pixelated' }}
@@ -262,12 +259,13 @@ export default function GameScreen({ active, collected, onCollect, onReset }: Ga
           />
 
           {view !== 'running' && view !== 'card' ? (
-            <div className="absolute inset-0 flex items-center justify-center bg-paper/90 p-4">
+            <div className="absolute inset-0 overflow-y-auto bg-paper/90">
+              <div className="flex min-h-full items-center justify-center p-4">
               {view === 'ready' ? (
                 <PixelPanel
                   title="Press Space to start"
                   actions={
-                    <PixelButton onClick={handleJump} className="w-full sm:w-auto">
+                    <PixelButton onClick={handleJump} data-testid="game-start-button" className="w-full sm:w-auto">
                       <Play className="h-4 w-4" aria-hidden="true" />
                       Start Run
                     </PixelButton>
@@ -283,7 +281,7 @@ export default function GameScreen({ active, collected, onCollect, onReset }: Ga
                 <PixelPanel
                   title="Paused"
                   actions={
-                    <PixelButton onClick={togglePause} className="w-full sm:w-auto">
+                    <PixelButton onClick={togglePause} data-testid="game-resume-button" className="w-full sm:w-auto">
                       <Play className="h-4 w-4" aria-hidden="true" />
                       Resume
                     </PixelButton>
@@ -299,7 +297,7 @@ export default function GameScreen({ active, collected, onCollect, onReset }: Ga
                 <PixelPanel
                   title="Game over"
                   actions={
-                    <PixelButton onClick={handleJump} className="w-full sm:w-auto">
+                    <PixelButton onClick={handleJump} data-testid="game-run-again-button" className="w-full sm:w-auto">
                       <RotateCcw className="h-4 w-4" aria-hidden="true" />
                       Run Again
                     </PixelButton>
@@ -314,11 +312,11 @@ export default function GameScreen({ active, collected, onCollect, onReset }: Ga
                   title="All items collected!"
                   actions={
                     <>
-                      <PixelButton onClick={handlePlayAgain} className="w-full sm:w-auto">
+                      <PixelButton onClick={handlePlayAgain} data-testid="game-play-again-button" className="w-full sm:w-auto">
                         <RotateCcw className="h-4 w-4" aria-hidden="true" />
                         Play Again
                       </PixelButton>
-                      <PixelButton variant="outline" onClick={() => navigate('/ask')} className="w-full sm:w-auto">
+                      <PixelButton variant="outline" onClick={() => navigate('/ask')} data-testid="game-ask-me-button" className="w-full sm:w-auto">
                         Ask Me Anything
                       </PixelButton>
                     </>
@@ -329,24 +327,28 @@ export default function GameScreen({ active, collected, onCollect, onReset }: Ga
                   </p>
                 </PixelPanel>
               ) : null}
+              </div>
             </div>
           ) : null}
 
           {view === 'card' && card ? (
-            <div className="absolute inset-0 flex items-center justify-center bg-paper/90 p-4">
+            <div className="fixed inset-0 z-40 overflow-y-auto bg-paper/90">
+              <div className="flex min-h-full items-center justify-center p-4">
               <CollectibleCard
                 id={card.id}
                 isNew={card.isNew}
                 onExplore={() => handleExplore(card.id)}
                 onContinue={handleContinue}
               />
+              </div>
             </div>
           ) : null}
         </div>
 
-        <div className="mt-4 grid grid-cols-2 gap-3 sm:hidden">
+        <div className="touch-only mt-4 grid grid-cols-2 gap-3">
           <button
             type="button"
+            data-testid="game-duck-button"
             onPointerDown={(event) => {
               event.preventDefault();
               duckRef.current = true;
@@ -367,6 +369,7 @@ export default function GameScreen({ active, collected, onCollect, onReset }: Ga
           </button>
           <button
             type="button"
+            data-testid="game-jump-button"
             onPointerDown={(event) => {
               event.preventDefault();
               handleJump();
@@ -378,7 +381,7 @@ export default function GameScreen({ active, collected, onCollect, onReset }: Ga
           </button>
         </div>
 
-        <p className="mt-4 hidden font-mono text-xs text-steel sm:block">
+        <p className="keyboard-only mt-4 font-mono text-xs text-steel">
           Space or up arrow to jump. Down arrow to duck. P or Escape to pause.
         </p>
       </div>

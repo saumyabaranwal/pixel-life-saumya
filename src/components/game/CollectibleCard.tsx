@@ -22,11 +22,11 @@ export default function CollectibleCard({ id, isNew, onExplore, onContinue }: Co
       title={section.name.toUpperCase()}
       actions={
         <>
-          <PixelButton onClick={onExplore} className="w-full sm:w-auto">
+          <PixelButton onClick={onExplore} data-testid="collectible-peek-button" className="w-full sm:w-auto">
             {SITE_CONTENT.collectActionLabel}
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </PixelButton>
-          <PixelButton variant="outline" onClick={onContinue} className="w-full sm:w-auto">
+          <PixelButton variant="outline" onClick={onContinue} data-testid="collectible-continue-button" className="w-full sm:w-auto">
             <Play className="h-4 w-4" aria-hidden="true" />
             Continue Running
           </PixelButton>

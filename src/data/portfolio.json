@@ -147,14 +147,14 @@
           "heading": "Technical skills",
           "groups": [
             { "label": "Programming", "items": ["Python", "C++", "JavaScript", "SQL", "Java (familiar)"] },
-            { "label": "Web development", "items": ["React.js", "Node.js", "Express.js", "FastAPI", "HTML", "CSS"] },
+            { "label": "Relevant Coursework", "items": ["Data Structures", "OOPs", "SDLC", "DBMS"] },
+            { "label": "Web development and Tools", "items": ["React.js", "Node.js", "Express.js", "FastAPI", "HTML", "CSS","Git", "GitHub", "Figma", "Canva"] },
             {
               "label": "AI and machine learning",
               "items": ["PyTorch", "OpenCV", "Gemini API", "AI agent design", "Prompt engineering", "Claude AI", "Ollama", "YOLO11", "ONNX Runtime"]
             },
             { "label": "OCR", "items": ["RapidOCR", "PaddleOCR"] },
-            { "label": "Databases", "items": ["MongoDB Atlas", "MySQL", "PostgreSQL"] },
-            { "label": "Tools", "items": ["Git", "GitHub", "Figma", "Canva"] }
+            { "label": "Databases", "items": ["MongoDB Atlas", "MySQL", "PostgreSQL"] }
           ]
         },
         {
@@ -229,8 +229,7 @@
         {
           "type": "text",
           "heading": "Personal interests",
-          "body": "Music, Piano, Literature, ",
-          "placeholder": true
+          "body": "Music, Piano, Literature, Art and creative fields"
         }
       ]
     },

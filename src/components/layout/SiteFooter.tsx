@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, type LucideIcon } from 'lucide-react';
+import EmailCopyLink from '@/components/ui/EmailCopyLink';
 import { SITE_CONTENT, SOCIAL_LINKS, type SocialId } from '@/data/content';
 
 const FOOTER_SOCIALS: { id: SocialId; icon: LucideIcon }[] = [
@@ -31,9 +32,9 @@ export default function SiteFooter() {
           );
         })}
         <li>
-          <a href={`mailto:${SITE_CONTENT.email}`} aria-label="Email" className={ICON_LINK_CLASS}>
+          <EmailCopyLink ariaLabel="Email" testId="footer-email-link" className={ICON_LINK_CLASS}>
             <Mail className="h-4 w-4" aria-hidden="true" />
-          </a>
+          </EmailCopyLink>
         </li>
       </ul>
       <p className="font-mono text-xs text-steel">{SITE_CONTENT.footer}</p>

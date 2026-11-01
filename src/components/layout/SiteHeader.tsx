@@ -21,6 +21,7 @@ export default function SiteHeader({ route }: SiteHeaderProps) {
         <button
           type="button"
           onClick={() => navigate('/')}
+          data-testid="nav-home-logo-button"
           className="flex min-w-0 items-center justify-center gap-3 font-pixel sm:justify-start text-[10px] uppercase leading-relaxed hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink"
         >
           <Gamepad2 className="h-5 w-5 shrink-0" aria-hidden="true" />
@@ -35,6 +36,7 @@ export default function SiteHeader({ route }: SiteHeaderProps) {
                     type="button"
                     aria-current={link.active ? 'page' : undefined}
                     onClick={() => navigate(link.path)}
+                    data-testid={`nav-${link.label.toLowerCase().replace(' ', '-')}-button`}
                     className={`w-full border-2 border-ink px-2 py-2 font-pixel text-[8px] uppercase transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink sm:w-auto sm:px-4 sm:text-[10px] ${
                       link.active ? 'bg-ink text-paper' : 'bg-paper text-ink hover:bg-mist'
                     }`}
@@ -48,6 +50,7 @@ export default function SiteHeader({ route }: SiteHeaderProps) {
           <button
             type="button"
             onClick={toggleTheme}
+            data-testid="theme-toggle-button"
             aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
             title={theme === 'dark' ? 'Light mode' : 'Dark mode'}
             className="flex h-9 w-9 shrink-0 items-center justify-center border-2 border-ink bg-paper text-ink transition-colors hover:bg-mist focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink"
