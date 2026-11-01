@@ -5,7 +5,7 @@
     "title": "MY LIFE IN PIXELS",
     "subtitle": "Currently running. Constantly evolving.",
     "tagline": "Run. Collect. Discover.",
-    "footer": "Saumya's personal portfolio, built for the Wispr Flow India challenge.",
+    "footer": "Saumya Baranwal",
     "email": "saumya.bar@gmail.com",
     "collectActionLabel": "Peek Inside"
   },
@@ -308,16 +308,6 @@
     {
       "question": "Which project taught you the most?",
       "answer": "PocketCart, my first full-stack project. I spent almost a month building it, starting with paper sketches of the UI, mapping out API calls, and then translating everything into code. It's essentially a shopping-list manager that works across different websites, but the learning experience was much bigger than the project itself. I got to understand how the frontend, backend, database, and APIs come together to make a complete product. I'm especially proud of the UI and how cleanly everything connects. Even today, the concepts I learned while building PocketCart are some of the ones I remember best. It taught me what it feels like to take an idea from paper to a working product.",
-      "placeholder": false
-    },
-    {
-      "question": "Why are you interested in Wispr Flow?",
-      "answer": "My mind is almost always running with ideas, and Wispr Flow helps me turn that constant stream of thoughts into something structured and usable. What I love is that it doesn't just transcribe what I say; it helps communicate what I actually mean, without losing my original thought. I'm often working on projects late at night, when typing everything out feels like an unnecessary extra step. Being able to simply speak my thoughts and turn them into something actionable is incredibly useful. It bridges the gap between having an idea and actually doing something with it.",
-      "placeholder": false
-    },
-    {
-      "question": "What would you do with the $3,000 grant?",
-      "answer": "My first priority would be investing in my learning and building experience. I'd put a good portion towards AI credits, tools, and hardware that would help me experiment with bigger ideas. I'd also love to upgrade some everyday essentials, like my mouse and headphones. And, of course, I'd keep aside something for myself and gifts for my family. I think being able to share a milestone like this with them would make it even more special.",
       "placeholder": false
     },
     {
